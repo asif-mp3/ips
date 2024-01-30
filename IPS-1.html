@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Personal Website</title>
+  <style>
+	body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #4CAF50, #2196F3);
+      color: #333;
+    }
+    h1 {
+      background: linear-gradient(to right, #7f1bcc, #ffafaf);
+      text-align: center;
+      padding: 20px;
+      font-family: 'Arial Black', Gadget, sans-serif;
+      font-size: 36px;
+    }
+    nav {
+      background-color: #124;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column; /* Adjust the content layout */
+      align-items: center; /* Center align the content */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+    .content:hover {
+      transform: scale(1.07);
+    }
+    section {
+      padding: 20px;
+      text-align: center; /* Center align the section content */
+    }
+    footer {
+      color: #fb2c1f;
+      text-align: center;
+      padding: 10px;
+	  font-weight:bold;
+	  
+    }
+    .submit-btn, .clear-btn {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .submit-btn:hover, .clear-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+	  \
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <section id="about">
+      <h2>About Me</h2>
+	          <img src="haha.jpeg" style="ewidth: 250px; height: 200px;">
+      <p>Hello There! I'm <span style="color: blue;"> Mohamed Asif M </span> Thank you so much for checking out my Page!<br>I'm a Sophomore at VIT University.<br>Member of AATM Club<br>Aspiring Web Developer<br>Passionate about Crafting Engaging and Responsive Web Experiences.</p>
+	  <p>I am excited to leverage this diverse skill set in contributing to innovative projects and collaborative development teams.</p>
+      <blockquote>
+        <i>"The only way to do great work is to love what you do." - Steve Jobs</i>
+      </blockquote>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <img src="imma.jpeg" style="ewidth: 200px; height: 160px;"><br>
+        <a href="https://github.com/asif-mp3?tab=repositories"> Click here to check my GitHub Repositories </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+		        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit" class="submit-btn">
+        <input type="button" value="Clear All" class="clear-btn" onclick="clearForm()">
+      </form>
+    </section>
+    <!-- Additional content to increase the length of the page -->
+  <footer>
+  <h2>Contact Information</h2>
+  <p>Email: asifoned@gmail.com</p>
+  <p>Phone: +1234567890</p>
+  <p>Address: 123 Street, Chennai, 600004</p>
+    <p>&copy; 2024 My Personal Website</p>
+    <a href="https://www.example.com" style="color: #fff; text-decoration: none;">Visit my other website</a>
+  </footer>
+  <script>
+    function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    }
+  </script>
+</body>
+</html>
+
